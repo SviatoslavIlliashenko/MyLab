@@ -13,12 +13,10 @@ public class Triangle extends Shape implements Comparable {
         this.c = c;
     }
 
-
     @Override
     public void draw() {
         System.out.println("This is Triangle,color : " + getColor() + "\n" + "a : " + a + "\n" + "b : " + b + "\n" + "c : " + c + "\n" + "area is : " + calculateArea());
-
-
+        
     }
 
     @Override

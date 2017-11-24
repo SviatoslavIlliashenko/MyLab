@@ -11,7 +11,6 @@ public class Rectangle extends Shape implements Comparable {
         this.width = width;
     }
 
-
     @Override
     public void draw() {
         System.out.println("This is Rectangle,color : " + getColor() + "\n" + "width : " + width + "\n" + "height : " + height + "\n" + "area is : " + calculateArea());

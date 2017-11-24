@@ -2,8 +2,8 @@ package Lab_2_8;
 
 public class Circle extends Shape implements Comparable {
 
-
     private double radius;
+
 
 
     Circle(String color, double radius) {
