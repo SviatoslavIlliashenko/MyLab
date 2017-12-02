@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        MyTupe myTupe1 = new MyTupe("aaa", 12, 142);
+        MyTupe<String,Integer,Long> myTupe1 = new MyTupe("aaa", 12, 14213424);
 
-        MyTupe myTupe = new MyTupe(10.10, "bbb", "ccc");
+        MyTupe<Double,String,String> myTupe = new MyTupe(10.10, "bbb", "ccc");
 
 
     }
