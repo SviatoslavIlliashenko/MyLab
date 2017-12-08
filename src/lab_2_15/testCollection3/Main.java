@@ -23,25 +23,36 @@ public class Main {
         Iterator<String> iteratorLinked = list2.iterator();
 
 
-        while (iteratorArray.hasNext()) {
-            System.out.println(iteratorArray.next());
-        }
+        ListIterator<String> listIterator = list2.listIterator();
+        int index = 0;
+        while (listIterator.hasNext() && index < list1.size()) {
 
-        while (iteratorArray.hasNext()) {
-            System.out.println(iteratorLinked.next());
-        }
-
-
-        ListIterator<String> listIterator=list2.listIterator();
-
-int index=0;
-        while (listIterator.hasNext()){
+            listIterator.next();
 
             listIterator.add(list1.get(index));
             index++;
         }
 
+        index = 0;
+        while (listIterator.hasPrevious() && index < list1.size()) ;
+        {
+             listIterator.previous();
+            listIterator.add(list1.get(index));
+
+            index++;
+        }
+
+        printElements(list2);
 
 
     }
+
+    public static void printElements(List list) {
+
+        Iterator iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+
 }
